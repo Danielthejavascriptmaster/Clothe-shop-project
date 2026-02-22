@@ -1,5 +1,7 @@
 *{
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -9,8 +11,6 @@ body{
     
 }
 
-
-
 header{
     position: fixed;
     width: 100%;
@@ -18,5 +18,54 @@ header{
     left: 0;
     padding: 25px 80px;
     backdrop-filter: blur(8px);
+    background: black;
+    border-bottom: 1px solid white;
 }
 
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+
+ul{
+    display: flex;
+    gap: 60px;
+    list-style: none;
+}
+
+ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.3s ease;
+
+}
+
+ul a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: -6px;
+    left: 0;
+    background: white;
+    transition: width 0.4s ease;
+}
+
+
+
+ul a:hover::after{
+    width: 100%;
+}
+
+nav::
