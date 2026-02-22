@@ -73,4 +73,101 @@ ul a:hover::after{
     gap: 40px;
 }
 
+.nav-icons a{
+    color: white;
+}
 
+section{
+    padding: 120px 80px 80px;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0;
+}
+
+.hero{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: black;
+}
+
+.hero h1{
+    font-size: 48px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 16px;
+    letter-spacing: 3px;
+    color:grey;
+}
+
+.featured h2{
+    font-size: 28px;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+}
+
+.big-image-placeholder{
+    width: 100%;
+    height: 500px;
+    background: rgb(145, 144, 144);
+    border: 1px solid rgb(84, 83, 83);
+}
+
+.products h3{
+    font-size: 28px;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+}
+
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.product-card{
+    color: #a7a7a7;
+    margin-bottom: 15px;
+}
+
+.product-card button{
+    width: 100%;
+    padding: 10px;
+    background: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.product-card button:hover{
+    background: #a8a8a8;
+}
+
+.about h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.about p{
+    max-width: 600px;
+    color: rgb(186, 186, 186);
+
+}
+
+footer{
+    padding: 40px 80px;
+    border-top: 1px solid rgb(33, 33, 33);
+    text-align: center;
+    color: grey;
+
+}
