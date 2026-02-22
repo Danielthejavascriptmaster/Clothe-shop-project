@@ -40,3 +40,16 @@ body{
     padding: 10px;
     font-weight: bold;
 }
+
+#description{
+    display: flex;
+    position: absolute;
+    padding: 20px 20px;
+    border: 1px solid black;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px black;
+    font-size: 35px;
+    left: 1100px;
+    top: 100px;
+}
