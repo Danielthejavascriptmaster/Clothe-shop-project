@@ -152,6 +152,10 @@ section{
     background: #a8a8a8;
 }
 
+.products a{
+    text-decoration: none;
+}
+
 .about h2{
     font-size: 28px;
     margin-bottom: 20px;
