@@ -177,3 +177,29 @@ ul a:hover::after{
     line-height: 1.7;
     color: rgb(255, 255, 255);
 }
+
+.sizes{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 15px;
+}
+
+.size{
+    padding: 10px 16px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.size:hover{
+    background: white;
+    color: black;
+}
+
+.size.active{
+    background: white;
+    color: black;
+}
