@@ -6,8 +6,8 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
-    color: #000000;
+    background-color: rgb(14, 14, 14);
+    color: #ffffff;
 }
 
 header{
@@ -155,8 +155,8 @@ ul a:hover::after{
 }
 
 .cartBtn{
-    background: black;
-    color: white;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border: none;
     padding: 18px;
     font-size: 16px;
@@ -175,6 +175,6 @@ ul a:hover::after{
 .product-info{
     font-size: 16px;
     line-height: 1.7;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
