@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(14, 14, 14);
+    color: #ffffff;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 25px 80px;
+    backdrop-filter: blur(8px);
+    background: black;
+    border-bottom: 1px solid white;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+
+ul{
+    display: flex;
+    gap: 60px;
+    list-style: none;
+}
+
+ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.3s ease;
+
+}
+
+ul a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: -6px;
+    left: 0;
+    background: white;
+    transition: width 0.4s ease;
+}
+
+
+
+ul a:hover::after{
+    width: 100%;
+}
+
+.nav-icons{
+    display: flex;
+    gap: 40px;
+}
+
+.nav-icons a{
+    color: white;
+}
+
+.detail-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 140px;
+    padding: 120px 10%;
+}
+
+.image-section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.image-section img{
+    width: 600px;
+    transition: 0.4s ease;
+}
+
+.image-section img:hover{
+    transform: 1.05;
+    scale: 0.90;
+}
+
+.leftArrow,
+.rightArrow{
+    border: none;
+    background: white;
+    width: 45px;
+    border-radius: 40%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.leftArrow:hover,
+.rightArrow:hover{
+    background:black;
+    color: white;
+}
+
+.info-section{
+    display: flex;
+    flex-direction: column;
+    max-width: 420px;
+}
+
+.category{
+    font-size: 14px;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.info-section h1{
+    font-size: 40px;
+    font-weight: 600px;
+    margin-bottom: 15px;
+}
+
+.price{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.quantity-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.quantity-box input{
+    width: 100px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+.cartBtn{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 18px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-bottom: 40px;
+}
+
+.cartBtn:hover{
+    background: rgb(95, 95, 95);
+    scale: 0.99;
+}
+
+.product-info{
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgb(255, 255, 255);
+}
+
+.sizes{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 15px;
+}
+
+.size{
+    padding: 10px 16px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.size:hover{
+    background: white;
+    color: black;
+}
+
+.size.active{
+    background: white;
+    color: black;
+}
