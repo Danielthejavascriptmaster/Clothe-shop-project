@@ -6,11 +6,19 @@ const productImage = document.getElementById("productImage");
 const rightArrow = document.querySelector(".rightArrow");
 const leftArrow = document.querySelector(".leftArrow");
 
-
+let whiteView = 1;
 
 rightArrow.addEventListener("click", function(){
-    if(whiteBtn.classList.contains("active"))
-    productImage.src = "/pictures/ralph lauren cable knit sweater white backside.jpg"
+
+if(whiteBtn.classList.contains("active") && whiteView ===1){
+    productImage.src = "/pictures/ralph lauren cable knit sweater white backside.jpg";
+    whiteView = 2;
+}   
+
+else if(whiteBtn.classList.contains("active") && whiteView === 2){
+    productImage.src = "/pictures/ralph lauren cable knit sweater white third view.jpg";
+    whiteView = 3;
+}
 });
 
 
@@ -28,11 +36,16 @@ function resetActive(){
     blueBtn.classList.remove("active");
 };
 
-
+blueBtn.addEventListener("click", function(){
+    resetActive();
+    blueBtn.classList.add("active");
+    productImage.src = "/pictures/ralph lauren cable knit sweater navy blue.jpg"
+})
 
 whiteBtn.addEventListener("click", function(){
     resetActive();
     whiteBtn.classList.add("active");
+    whiteView = 1;
     productImage.src = "/pictures/ralph lauren cable knit sweater white.jpg"
 });
 
