@@ -229,5 +229,15 @@ ul a:hover::after{
 }
 
 #beigeBtn { background-color: rgb(231, 231, 193); }
-#blueBtn { background-color: skyblue; }
+#blueBtn { background-color: rgb(4, 1, 50); }
 #whiteBtn { background-color: white;}
+
+#sizelabel{
+    display: flex;
+    position: absolute;
+    top: 390px;
+    color: grey;
+    font-size: 15px;
+    
+    
+}
