@@ -207,3 +207,29 @@ ul a:hover::after{
     background: white;
     color: black;
 }
+
+.color-selector {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.color-selector button {
+    width: 35px;         
+    height: 35px;        
+    border-radius: 50%; 
+    border: 2px solid white;
+    cursor: pointer;
+    transition:0.3s ease;
+    outline: none;
+    padding: 0;          
+    margin-top: 15px;
+}
+
+
+.color-selector button:hover {
+    transform: scale(1.1);
+}
+
+#blackBtn { background-color: rgb(107, 7, 7); }
+#redBtn { background-color: rgb(0, 0, 0); }
