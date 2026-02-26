@@ -73,3 +73,4 @@ for (var i = 0; i < sizeButtons.length; i++) {
     }
 }
 
+
