@@ -1,4 +1,4 @@
-var sizeButtons = document.getElementsByClassName("size"); 
+const sizeButtons = document.getElementsByClassName("size"); 
 var selectedSize = ""; 
 
 for (var i = 0; i < sizeButtons.length; i++) {  
