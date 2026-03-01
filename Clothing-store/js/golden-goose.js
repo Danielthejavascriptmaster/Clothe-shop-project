@@ -10,14 +10,13 @@ function resetActive(){
 redBtn.addEventListener("click", function(){
     resetActive();
     redBtn.classList.add("active");
-    productImage.src = "/pictures/golden goose shoe red.avif"
+    productImage.src = "/Clothing-store/assets/images/golden goose shoe red.avif"
 })
 
 blackBtn.addEventListener("click", function(){
     resetActive();
     blackBtn.classList.add("active");
-    whiteView = 1;
-    productImage.src = "/pictures/golden goose shoe black.avif"
+    productImage.src = "/Clothing-store/assets/images/golden goose shoe black.avif"
 });
 
 var sizeButtons = document.getElementsByClassName("size"); 

@@ -10,12 +10,12 @@ function resetActive(){
 greyBtn.addEventListener("click", function(){
     resetActive();
     greyBtn.classList.add("active");
-    productImage.src = "/pictures/grey lv beanie.jpg"
+    productImage.src = "/Clothing-store/assets/images/grey lv beanie.jpg"
 })
 
 blackBtn.addEventListener("click", function(){
     resetActive();
     blackBtn.classList.add("active");
    
-    productImage.src = "/pictures/black lv beanie.jpg"
+    productImage.src = "/Clothing-store/assets/images/black lv beanie.jpg"
 });
