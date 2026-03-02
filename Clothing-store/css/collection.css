@@ -30,7 +30,7 @@ header{
     font-size: 18px;
     letter-spacing: 4px;
     font-weight: 700;
-    color: white;
+    color: rgb(255, 240, 145);
 }
 
 ul{
@@ -83,10 +83,15 @@ ul a:hover::after{
 }
 
 .products h2 {
+    font-size: 48px;
+    letter-spacing: 6px;
+    font-weight: 900;
     text-align: center;
-    font-size: 32px;
-    margin-bottom: 40px;
-    color: white;
+    color: #fff;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
 }
 
 
@@ -160,3 +165,79 @@ ul a:hover::after{
     color: inherit;
 }
 
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer{
+    background:#080808;
+    padding-top:80px;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:50px;
+    padding:0 8% 60px;
+}
+
+.footer-brand h3{
+    letter-spacing:3px;
+}
+
+.footer-brand p{
+    margin-top:15px;
+    color:#777;
+    line-height:1.6;
+}
+
+.footer-links,
+.footer-social{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.footer-links h4,
+.footer-social h4{
+    margin-bottom:10px;
+    letter-spacing:2px;
+}
+
+.footer-links a,
+.footer-social a{
+    text-decoration:none;
+    color:#777;
+    transition:0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-social a:hover{
+    color:white;
+}
+
+.footer-bottom{
+    text-align:center;
+    padding:20px;
+    border-top:1px solid rgba(255,255,255,0.1);
+    color:#666;
+}
+
+
+
+.reveal{
+    opacity:0;
+    transform:translateY(80px);
+    transition:all 1s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
