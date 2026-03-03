@@ -189,6 +189,7 @@ footer{
 
 .footer-brand h3{
     letter-spacing:3px;
+    color: white;
 }
 
 .footer-brand p{
@@ -202,6 +203,7 @@ footer{
     display:flex;
     flex-direction:column;
     gap:10px;
+    color: white;
 }
 
 .footer-links h4,

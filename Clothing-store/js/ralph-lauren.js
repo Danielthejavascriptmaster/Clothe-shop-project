@@ -11,19 +11,19 @@ let whiteView = 1;
 rightArrow.addEventListener("click", function(){
 
 if(whiteBtn.classList.contains("active") && whiteView ===1){
-    productImage.src = "/pictures/ralph lauren cable knit sweater white backside.jpg";
+    productImage.src = "/Clothing-store/assets/images/ralph lauren cable knit sweater white backside.jpg";
     whiteView = 2;
 }   
 
 else if(whiteBtn.classList.contains("active") && whiteView === 2){
-    productImage.src = "/pictures/ralph lauren cable knit sweater white third view.jpg";
+    productImage.src = "/Clothing-store/assets/images/ralph lauren cable knit sweater white third view.jpg";
     whiteView = 3;
 }
 });
 
 leftArrow.addEventListener("click", function(){
     if(whiteBtn.classList.contains("active"))
-    productImage.src = "/pictures/ralph lauren cable knit sweater white.jpg";
+    productImage.src = "/Clothing-store/assets/images/ralph lauren cable knit sweater white.jpg";
 });
 
 function resetActive(){
@@ -35,21 +35,21 @@ function resetActive(){
 blueBtn.addEventListener("click", function(){
     resetActive();
     blueBtn.classList.add("active");
-    productImage.src = "/pictures/ralph lauren cable knit sweater navy blue.jpg"
+    productImage.src = "/Clothing-store/assets/images/ralph lauren cable knit sweater navy blue.jpg"
 })
 
 whiteBtn.addEventListener("click", function(){
     resetActive();
     whiteBtn.classList.add("active");
     whiteView = 1;
-    productImage.src = "/pictures/ralph lauren cable knit sweater white.jpg"
+    productImage.src = "/Clothing-store/assets/images/ralph lauren cable knit sweater white.jpg"
 });
 
 
 beigeBtn.addEventListener("click", function(){
     resetActive();
     beigeBtn.classList.add("active");
-    productImage.src = "/pictures/ralph lauren cable knit sweater beige.jpg"
+    productImage.src = "/Clothing-store/assets/images/ralph lauren cable knit sweater beige.jpg"
 });
 
 var sizeButtons = document.getElementsByClassName("size"); 

@@ -16,31 +16,31 @@ function resetActive(){
 whiteBtn.addEventListener("click", function(){
     resetActive();
     whiteBtn.classList.add("active");
-    productImage.src = "/pictures/white t shirt.webp"
+    productImage.src = "/Clothing-store/assets/images/white t shirt.webp"
 })
 
 beigeBtn.addEventListener("click", function(){
     resetActive();
     beigeBtn.classList.add("active");
-    productImage.src = "/pictures/beige t shirt.jpg"
+    productImage.src = "/Clothing-store/assets/images/beige t shirt.jpg"
 });
 
 blueBtn.addEventListener("click", function(){
     resetActive();
     blueBtn.classList.add("active");
-    productImage.src = "/pictures/navy blue t shirt.avif"
+    productImage.src = "/Clothing-store/assets/images/navy blue t shirt.avif"
 });
 
 greyBtn.addEventListener("click", function(){
     resetActive();
     greyBtn.classList.add("active");
-    productImage.src = "/pictures/grey t shirt.jpg"
+    productImage.src = "/Clothing-store/assets/images/grey t shirt.jpg"
 });
 
 blackBtn.addEventListener("click", function(){
     resetActive();
     blackBtn.classList.add("active");
-    productImage.src = "/pictures/black t shirt.jpg"
+    productImage.src = "/Clothing-store/assets/images/black t shirt.jpg"
 });
 
 var sizeButtons = document.getElementsByClassName("size"); 

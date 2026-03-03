@@ -10,12 +10,12 @@ function resetActive(){
 greyBtn.addEventListener("click", function(){
     resetActive();
     greyBtn.classList.add("active");
-    productImage.src = "/pictures/brown lv belt.webp"
+    productImage.src = "/Clothing-store/assets/images/brown lv belt.webp"
 })
 
 blackBtn.addEventListener("click", function(){
     resetActive();
     blackBtn.classList.add("active");
    
-    productImage.src = "/pictures/black lv belt.png"
+    productImage.src = "/Clothing-store/assets/images/black lv belt.png"
 });

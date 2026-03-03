@@ -12,19 +12,19 @@ function resetActive(){
 greenBtn.addEventListener("click", function(){
     resetActive();
     greenBtn.classList.add("active");
-    productImage.src = "/pictures/green quarter zip.webp"
+    productImage.src = "/Clothing-store/assets/images/green quarter zip.webp"
 })
 
 beigeBtn.addEventListener("click", function(){
     resetActive();
     beigeBtn.classList.add("active");
-    productImage.src = "/pictures/beige quarter zip.jpg"
+    productImage.src = "/Clothing-store/assets/images/beige quarter zip.jpg"
 });
 
 greyBtn.addEventListener("click", function(){
     resetActive();
     greyBtn.classList.add("active");
-    productImage.src = "/pictures/grey quarter zip.jpg"
+    productImage.src = "/Clothing-store/assets/images/grey quarter zip.jpg"
 });
 
 var sizeButtons = document.getElementsByClassName("size"); 
