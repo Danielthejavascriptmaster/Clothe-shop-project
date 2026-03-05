@@ -221,7 +221,7 @@ ul a:hover::after{
     transition:0.3s ease;
     outline: none;
     padding: 0;          
-    margin-top: 15px;
+    margin-top: 45px;
 }
 
 
@@ -230,13 +230,13 @@ ul a:hover::after{
 }
 
 #blackBtn { background-color: rgb(0, 0, 0); }
-#blueBtn { background-color: rgb(4, 1, 50); }
+#blueBtn { background-color: rgb(138, 202, 255); }
 
 
 #sizelabel{
     display: flex;
     position: absolute;
-    top: 300px;
+    top: 290px;
     color: grey;
     font-size: 15px;
     
