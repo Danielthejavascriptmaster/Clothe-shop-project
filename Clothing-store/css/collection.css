@@ -222,12 +222,77 @@ footer{
     color:#666;
 }
 
-#cookie-popup{
-    display: none;
+#cookie-popup {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 20px;
-    border: 1px solid white;
-    background: rgb(122, 210, 146);
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    max-width: 420px;
+    padding: 25px 30px;
+    border-radius: 20px;
+    background: rgba(10, 10, 10, 0.55);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    color: #f2f2f2;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    opacity: 0;
+    animation: popupFadeIn 0.8s forwards ease-out;
+    z-index: 9999;
+}
+
+@keyframes popupFadeIn {
+    from { opacity: 0; transform: translateX(-50%) translateY(40px); }
+    to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+#cookie-popup p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #eaeaea;
+    margin: 0;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    justify-content: center;
+}
+
+#accept-btn, #reject-btn {
+    flex: 1;
+    padding: 12px 0;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease;
+    min-width: 110px;
+}
+
+#accept-btn {
+    background: linear-gradient(135deg, #FFD966, #F7C948);
+    color: #0a0a0a;
+    box-shadow: 0 5px 15px rgba(255, 215, 102, 0.4);
+}
+
+#accept-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 215, 102, 0.6);
+}
+
+#reject-btn {
+    background: rgba(255, 255, 255, 0.08);
+    color: #f2f2f2;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+#reject-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
 }
