@@ -88,16 +88,26 @@ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
+
+    opacity: 0;
+    animation: scrollFade ease-in forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
 
 #featured-drop{
     display: flex;
-    color: rgb(167, 167, 167);
+    color: rgb(217, 217, 217);
     letter-spacing: 2px;
     font-size: 35px;
     justify-content: center;
     align-items: center;
     padding-top: 200px;
+
+    opacity: 0;
+    animation: scrollFade ease-in forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
     
 }
 
@@ -111,7 +121,7 @@ img{
     margin-bottom: 300px;
     animation-name: fadeIn;
     animation-duration: 3s;
-    transition: 4s ease-in;
+    transition: 6s ease-in;
 }
 
 .hero-content h1{
@@ -138,17 +148,25 @@ img{
     from {opacity: 0;}
     to {opacity: 1;}
 }
-/*this makes the animation for the main text thing*/
 
-
-
-
-/*? product time bruh run your pockets fam are you mental blud*/
 
 #latest-product-label{
-    text-align: center;
-    margin-top: 80px;
-    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    letter-spacing: 3px;
+    font-weight: 300;
+    font-family:fantasy;
+
+    opacity: 0;
+    animation: scrollFade ease-in forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -157,14 +175,23 @@ img{
     grid-template-columns: repeat(3, 1fr);
     gap: 100px;
     padding: 40px 10%;
+    margin-top: -70px;
 }
 
-.product-card a{
-    text-decoration: none;
-    color: white;
-    display: block;
 
+
+@keyframes scrollFade{
+    from{
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+
+
 
 .product-card{
     display: flex;
@@ -179,26 +206,40 @@ img{
     height: 450px;
     flex-direction: column;
 
+    opacity: 0;
+    animation: scrollFade ease-in forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+
 }
+
 
 .product-card:hover{
     transform: translateY(-8px);
     box-shadow: 0 8px 20px white;
 }
 
+
 .product-card img{
     width: 800px;
-
+    transition: transform 0.6s ease;
     border-radius: 6px;
 }
 
+
 .product-card p{
-    margin-top: 5px;
+    margin-top: 10px;
     color: lightgrey;
     font-weight: 600;
 }
 
-/*!newsletter blud!!!! */
+.product-card h3{
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+
 
 .newsletter-form {
     display: flex;
@@ -206,7 +247,13 @@ img{
     gap: 10px; 
     margin-bottom: 80px;
     flex-wrap: wrap; 
+
+    opacity: 0;
+    animation: scrollFade ease-in forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
+
 
 .newsletter-form input[type="email"] {
     padding: 12px 20px;
@@ -217,11 +264,18 @@ img{
     color: white;
     outline: none;
     min-width: 250px;
+
+    opacity: 0;
+    animation: scrollFade ease-in forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
+
 
 .newsletter-form input::placeholder {
     color: #777;
 }
+
 
 .newsletter-form button {
     padding: 12px 25px;
@@ -233,21 +287,34 @@ img{
     font-weight: 600;
     cursor: pointer;
     transition: 0.3s ease;
+
+    opacity: 0;
+    animation: scrollFade ease-in forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
+
 
 .newsletter-form button:hover {
     background: rgb(255, 230, 120);
     transform: translateY(-2px);
 }
 
+
 h2{
     text-align: center;
     font-size: 36px;
     letter-spacing: 2px;
     margin-top: 80px;
-    margin-bottom: 20px;
     color: lightgrey;
+    margin-bottom: 20px;
+
+    opacity: 0;
+    animation: scrollFade ease-in forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
+
 
 p{
     text-align: center;
@@ -256,13 +323,25 @@ p{
     line-height: 1.6;
     max-width: 700px;
     margin: 0 auto 40px;
+    
+
+    opacity: 0;
+    animation: scrollFade ease-in forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
 
 
 footer{
     background:black;
     padding-top:80px;
+
+    opacity: 0;
+    animation: scrollFade ease-in forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
+
 
 .footer-container{
     display:grid;
@@ -271,10 +350,12 @@ footer{
     padding:0 8% 60px;
 }
 
+
 .footer-brand h3{
     letter-spacing:3px;
     color: white;
 }
+
 
 .footer-brand p{
     margin-top:15px;
@@ -282,19 +363,27 @@ footer{
     line-height:1.6;
 }
 
+
 .footer-links,
 .footer-social{
     display:flex;
     flex-direction:column;
     gap:10px;
     color: white;
+
+    opacity: 0;
+    animation: scrollFade ease-in forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
+
 
 .footer-links h4,
 .footer-social h4{
     margin-bottom:10px;
     letter-spacing:2px;
 }
+
 
 .footer-links a,
 .footer-social a{
@@ -303,10 +392,12 @@ footer{
     transition:0.3s ease;
 }
 
+
 .footer-links a:hover,
 .footer-social a:hover{
     color:white;
 }
+
 
 .footer-bottom{
     text-align:center;
