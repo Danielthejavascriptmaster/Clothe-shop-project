@@ -109,6 +109,13 @@ ul a:hover::after{
     text-align: center;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
+    opacity: 0;
+    animation: scrollFade ease-in forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+
 }
 
 
@@ -169,6 +176,11 @@ ul a:hover::after{
 footer{
     background:#080808;
     padding-top:80px;
+
+    opacity: 0;
+    animation: scrollFade ease-in forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
 
 .footer-container{
@@ -249,6 +261,18 @@ footer{
     from { opacity: 0; transform: translateX(-50%) translateY(40px); }
     to { opacity: 1; transform: translateX(-50%) translateY(0); }
 }
+
+@keyframes scrollFade{
+    from{
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 #cookie-popup p {
     font-size: 14px;
