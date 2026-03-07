@@ -13,3 +13,27 @@ window.onload = function(){
  }
 
 }
+
+const form = document.querySelector(".newsletter-form");
+const emailInput = document.getElementById("input");
+const logo = document.querySelector(".logo");
+
+form.addEventListener("submit", function(event){
+    event.preventDefault();
+
+    const emailValue = emailInput.value;
+
+    if(emailValue === "Danielisthegoat@gmail.com"){
+        window.alert("WOW you are really smart maybe you could get a discpunt on one of the products")
+        console.log("choose any of the products for free, you welcome blud")
+    }
+
+    if(emailValue === "Abbasisthegoat@gmail.com"){
+        window.alert("Nah who told you that he is really bad at fifa")
+    }
+
+    if(emailValue === "Mikaelisthegoat@gmail.com"){
+        logo.textContent = "Bro is not the goat"
+    }
+
+});
