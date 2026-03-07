@@ -52,6 +52,10 @@ beigeBtn.addEventListener("click", function(){
     productImage.src = "/Clothing-store/assets/images/ralph lauren cable knit sweater beige.jpg"
 });
 
+const cartBtn = document.querySelector(".cartBtn");
 
+cartBtn.addEventListener("click", function(event){
+    window.alert("Item added to cart!")
+})
 
 

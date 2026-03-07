@@ -26,3 +26,10 @@ greyBtn.addEventListener("click", function(){
     greyBtn.classList.add("active");
     productImage.src = "/Clothing-store/assets/images/grey quarter zip.jpg"
 });
+
+
+const cartBtn = document.querySelector(".cartBtn");
+
+cartBtn.addEventListener("click", function(event){
+    window.alert("Item added to cart!")
+})

@@ -2,6 +2,12 @@ const blackBtn = document.getElementById("blackBtn");
 const redBtn = document.getElementById("redBtn");
 const productImage = document.getElementById("productImage");
 
+const cartBtn = document.querySelector(".cartBtn");
+
+cartBtn.addEventListener("click", function(event){
+    window.alert("Item added to cart!")
+})
+
 function resetActive(){
     blackBtn.classList.remove("active");
     redBtn.classList.remove("active");
