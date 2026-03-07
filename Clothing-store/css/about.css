@@ -10,6 +10,75 @@ body{
     background:rgb(8, 8, 8);
 }
 
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 25px 80px;
+    backdrop-filter: blur(8px);
+    background: black;
+    border-bottom: 1px solid white;
+    box-sizing: border-box;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    color: rgb(255, 240, 145);
+}
+
+ul{
+    display: flex;
+    gap: 60px;
+    list-style: none;
+}
+
+ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.3s ease;
+
+}
+
+ul a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: -6px;
+    left: 0;
+    background: white;
+    transition: width 0.4s ease;
+}
+
+
+
+ul a:hover::after{
+    width: 100%;
+}
+
+.nav-icons{
+    display: flex;
+    gap: 40px;
+}
+
+.nav-icons a{
+    color: white;
+}
+
+
 .hero{
     display: flex;
     flex-direction: column;
@@ -17,10 +86,17 @@ body{
     align-items: center;
     text-align: center;
     padding: 0 10%;
+    margin-top: 250px;
+    transition: 0,7s ease;
+
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    transition: 2s ease;
+    
 }
 
 .hero h1{
-    font-size: 70px;
+    font-size: 90px;
     letter-spacing: 4px;
     margin-bottom: 20px;
 }
@@ -29,6 +105,7 @@ body{
     max-width: 600px;
     color: white;
     line-height: 1.7;
+    font-size: 20px;
 }
 
 button{
@@ -41,11 +118,12 @@ button{
     text-decoration: none;
     border: none;
     transition: 0.5s ease;
+    font-size: 30px;
 }
 
 button:hover{
     transform: translateY(-3px);
-    box-shadow: 0px 5px 15px rgb(252, 215, 121);
+    box-shadow: 0px 2px 12px rgb(252, 215, 121);
 }
 
 section{
@@ -53,6 +131,12 @@ section{
     max-width: 1200px;
     margin: auto;
     text-align: center;
+    margin-bottom: 300px;
+
+     opacity: 0;
+    animation: scrollFade ease-in forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
 }
 
 section h2{
@@ -66,6 +150,11 @@ section p{
     line-height: 1.8;
     max-width: 700px;
     margin: auto;
+
+     opacity: 0;
+    animation: scrollFade ease-in forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
 }
 
 .cards{
@@ -78,25 +167,48 @@ section p{
 .card{
     padding: 40px;
     border-radius: 14px;
-    background-color: white;
+    background-color: rgb(108, 107, 107);
     border: 1px solid white;
     transition: 0.3s ease;
     backdrop-filter: blur(10px);
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 20px;
+    text-shadow: 0px 1px 2px rgb(0, 0, 0);
 }
 
 .card p{
+    color: rgb(255, 255, 255);
+    transition: 0.4s ease-out;
+}
+
+.card p:hover{
     color: black;
+    text-shadow: 0px 1px 2px white;
+    transform: translateY(-4px);
 }
 
 .card:hover{
     transform: translateY(-8px);
-    box-shadow: 0px 15px 35px white;
+    box-shadow: 0px 10px 20px white;
+    color: black;
 }
 
 .card h3{
     margin-bottom: 10px;
+}
+
+.card h3::after{
+    content: "";
+    display:block;
+    width:0;
+    height:3px;
+    background:orange;
+    margin:14px auto 0;
+    transition:0.7s ease;
+}
+
+.card h3:hover::after{
+    width:100px;
 }
 
 .img{
@@ -105,8 +217,6 @@ section p{
     border-radius: 10px;
     transition: 0.5s;
     opacity: 0.85;
-    color: blue;
-    background-color: blue;
 }
 
 .img:hover{
@@ -121,6 +231,11 @@ section p{
     margin: auto;
     position: relative;
     text-align: center;
+
+     opacity: 0;
+    animation: scrollFade ease-in forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .Vision h2::after{
@@ -137,4 +252,193 @@ section p{
     width:100px;
 }
 
+.Vision p{
+    font-size: 20px;
+}
 
+.built-different h2::after{
+    content: "";
+    display:block;
+    width:0;
+    height:2px;
+    background:orange;
+    margin:14px auto 0;
+    transition:0.7s ease;
+}
+
+.built-different h2:hover::after{
+    width:200px;
+}
+
+
+.the-movement h2::after{
+    content: "";
+    display:block;
+    width:0;
+    height:2px;
+    background:orange;
+    margin:14px auto 0;
+    transition:0.7s ease;
+}
+
+.the-movement h2:hover::after{
+    width:200px;
+}
+
+.the-movement p{
+    font-size: 20px;
+}
+
+
+footer{
+    background:#080808;
+    padding-top:80px;
+
+    opacity: 0;
+    animation: scrollFade ease-in forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:50px;
+    padding:0 8% 60px;
+}
+
+.footer-brand h3{
+    letter-spacing:3px;
+    color: white;
+}
+
+.footer-brand p{
+    margin-top:15px;
+    color:#777;
+    line-height:1.6;
+}
+
+.footer-links,
+.footer-social{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    color: white;
+}
+
+.footer-links h4,
+.footer-social h4{
+    margin-bottom:10px;
+    letter-spacing:2px;
+}
+
+.footer-links a,
+.footer-social a{
+    text-decoration:none;
+    color:#777;
+    transition:0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-social a:hover{
+    color:white;
+}
+
+.footer-bottom{
+    text-align:center;
+    padding:20px;
+    border-top:1px solid rgba(255,255,255,0.1);
+    color:#666;
+}
+
+#cookie-popup {
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    max-width: 420px;
+    padding: 25px 30px;
+    border-radius: 20px;
+    background: rgba(10, 10, 10, 0.55);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    color: #f2f2f2;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    opacity: 0;
+    animation: popupFadeIn 0.8s forwards ease-out;
+    z-index: 9999;
+}
+
+@keyframes popupFadeIn {
+    from { opacity: 0; transform: translateX(-50%) translateY(40px); }
+    to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+@keyframes scrollFade{
+    from{
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+#cookie-popup p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #eaeaea;
+    margin: 0;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    justify-content: center;
+}
+
+#accept-btn, #reject-btn {
+    flex: 1;
+    padding: 12px 0;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease;
+    min-width: 110px;
+}
+
+#accept-btn {
+    background: linear-gradient(135deg, #FFD966, #F7C948);
+    color: #0a0a0a;
+    box-shadow: 0 5px 15px rgba(255, 215, 102, 0.4);
+}
+
+#accept-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 215, 102, 0.6);
+}
+
+#reject-btn {
+    background: rgba(255, 255, 255, 0.08);
+    color: #f2f2f2;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+#reject-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+}

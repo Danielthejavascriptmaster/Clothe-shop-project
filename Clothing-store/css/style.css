@@ -121,7 +121,7 @@ img{
     margin-bottom: 300px;
     animation-name: fadeIn;
     animation-duration: 3s;
-    transition: 6s ease-in;
+    transition: 2s ease-in;
 }
 
 .hero-content h1{
