@@ -37,27 +37,18 @@
 
     <button id="myBtn">Suprise</button>
     <button id="checkBtn">check</button>
-
-    <div class="bank">
-    <p id="money">current balance: 0</p>
-    </div>
-
+        <br><br>
+    <button id="buyBtn">glock-19</button>
     
+    <p id="money">current balance: 0</p>
+    
+
+
 
    
 
     <script>
-
-
-
-
-
-
-
-
-
-
-
+        const buy = document.getElementById("buyBtn");
         const addBtn = document.getElementById("myBtn");
         const balance = document.getElementById("money");
         const checkBalance = document.getElementById("checkBtn");
@@ -82,30 +73,14 @@
             
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        buy.addEventListener("click", function(){
+            if(money > 9){
+                window.alert("wow you bough a weapon")
+                money = money - 10;
+            } else{
+                window.alert("blud get you bread up gng")
+            }
+        })
 
 
     </script>
