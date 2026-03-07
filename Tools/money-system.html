@@ -6,6 +6,108 @@
     <title>Document</title>
 </head>
 <body>
+    <style>
+        body{
+            background-color: rgb(49, 49, 49);
+        }
+
+        #myBtn{
+            border-radius: 4px;
+            font-size: 20px;   
+            border: 3px solid rgb(138, 168, 87);  
+            color: rgb(41, 61, 41);  
+            background-color: whitesmoke; 
+        }
+
+        #checkBtn{
+            border-radius: 4px;
+            font-size: 20px;   
+            border: 3px solid rgb(138, 168, 87);  
+            color: rgb(41, 61, 41);  
+            background-color: whitesmoke; 
+        }
+
+        .bank{
+            color: white;
+        }
+
+    </style>
+
+
+
+    <button id="myBtn">Suprise</button>
+    <button id="checkBtn">check</button>
+
+    <div class="bank">
+    <p id="money">current balance: 0</p>
+    </div>
+
     
+
+   
+
+    <script>
+
+
+
+
+
+
+
+
+
+
+
+        const addBtn = document.getElementById("myBtn");
+        const balance = document.getElementById("money");
+        const checkBalance = document.getElementById("checkBtn");
+
+        let money = 0;
+
+        
+        addBtn.addEventListener("click", function(){
+            money++;
+            console.log(money)
+
+        });
+
+        checkBalance.addEventListener("click", function(){
+            showBalance()
+
+        })
+
+        function showBalance(){
+            console.log("Current Balance:", money)
+            balance.textContent ="Your current balance is "+ money + " dollers";
+            
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
 </body>
 </html>
