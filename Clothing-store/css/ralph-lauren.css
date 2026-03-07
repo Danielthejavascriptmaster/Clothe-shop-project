@@ -239,6 +239,36 @@ ul a:hover::after{
     top: 390px;
     color: grey;
     font-size: 15px;
-    
-    
+}
+
+#balanceContainer{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(255, 230, 64);
+    background-color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid rgb(102, 125, 86) ;
+    width: fit-content;
+    margin: 20px 0px;
+    box-shadow: 0px 0px 10px rgb(255, 228, 129);
+    position: fixed;
+    bottom: 10px;
+    left: 30px;
+}
+
+#thankYouPopup{
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(50%);
+    background-color: rgb(9, 9, 9);
+    color: orange;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px black;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    z-index: 1000;
 }
