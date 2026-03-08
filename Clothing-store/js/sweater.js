@@ -94,7 +94,7 @@ window.onload = function(){
 
     }
 
-    const jacketPrice = 79.99;
+    const jacketPrice = 20.99;
 let money = 700;
 const balanceDisplay = document.getElementById("balanceContainer");
 const cartBtn = document.querySelector(".cartBtn");
