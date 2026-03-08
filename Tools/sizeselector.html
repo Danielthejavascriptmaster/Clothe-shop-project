@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+
+    body{
+        display: flex;
+        align-items: center;
+    }
+
+    .size{
+        background-color: white;
+        color: black;
+        border-radius: 3px;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        transition: 0.3s ease;
+    }
+    </style>
+
+    <button id="sizeS" class="size">S</button>
+    <button id="sizeM" class="size">M</button>
+    <button id="sizeL" class="size">L</button>
+    
+
+    <script>
+        const sizeS = document.getElementById("sizeS");
+        const sizeM = document.getElementById("sizeM");
+        const sizeL = document.getElementById("sizeL");
+
+        sizeS.addEventListener("click", function(){
+           sizeS.style.background = "black";
+            sizeS.style.color = "white";
+
+            sizeM.style.background = "white";
+            sizeM.style.color = "black"
+
+            sizeL.style.background = "white"
+            sizeL.style.color = "black"
+        })
+
+        sizeM.addEventListener("click", function(){
+           sizeM.style.background = "black";
+            sizeM.style.color = "white";
+
+            sizeS.style.background = "white";
+            sizeS.style.color = "black"
+
+            sizeL.style.background = "white"
+            sizeL.style.color = "black"
+        })
+
+        sizeL.addEventListener("click", function(){
+           sizeL.style.background = "black";
+            sizeL.style.color = "white";
+
+            sizeS.style.background = "white";
+            sizeS.style.color = "black"
+
+            sizeM.style.background = "white"
+            sizeM.style.color = "black"
+        })
+
+
+    </script>
+</body>
+</html>
