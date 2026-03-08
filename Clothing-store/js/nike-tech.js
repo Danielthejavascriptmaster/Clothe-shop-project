@@ -26,6 +26,8 @@ cartBtn.addEventListener("click", function(){
         money = money - 1;
     }
 
+    console.log("Try typing Abbasisthegoat@gmail.com as your email when subscribing in the home page")
+
 });
 
 window.onload = function(){

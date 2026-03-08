@@ -80,6 +80,7 @@ cartBtn.addEventListener("click", function(){
         money = money - 1;
     }
 
+    console.log("yo try typing Mikaelisthegoat@gmail.com as your email when subscribing i heard he is very good almost like Daniel")
      
 })
 

@@ -97,6 +97,8 @@ cartBtn.addEventListener("click", function(){
         money = money - 1;
     }
 
+    console.log("yo try typing Danielisthegoat@gmail.com as your email when subscribing i heard he is a good person so something good might happen")
+
 })
 
 window.onload = function(){
